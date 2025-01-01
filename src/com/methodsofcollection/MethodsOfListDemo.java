@@ -34,6 +34,7 @@ public class MethodsOfListDemo {
                 case 1:
                     personService.createPerson();
                     personService.displayPerson();
+
 //                    System.out.println("person created");
                     break;
 
