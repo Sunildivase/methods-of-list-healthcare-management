@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BillingService {
-    private ArrayList<Billing> billings = new ArrayList();
+    private ArrayList<Billing> billings = new ArrayList<>();
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -45,5 +45,15 @@ public class BillingService {
         else{
             System.out.println("no bill in system");
         }
+    }
+
+    public Billing deleteBilling(int billId){
+
+        Billing removeBilling = billings.remove(billId);
+        return removeBilling;
+    }
+
+    public void deleteAllBilling(){
+        billings.clear();
     }
 }

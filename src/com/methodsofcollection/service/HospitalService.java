@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class HospitalService {
 
-    private ArrayList<Hospital> hospitals = new ArrayList();
+    private ArrayList<Hospital> hospitals = new ArrayList<>();
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -58,4 +58,13 @@ public class HospitalService {
         }
     }
 
+    public Hospital deleteHospital(int hospitalId){
+
+        Hospital removeHospital = hospitals.remove(hospitalId);
+        return removeHospital;
+    }
+
+    public void deleteAllHospital(){
+        hospitals.clear();
+    }
 }

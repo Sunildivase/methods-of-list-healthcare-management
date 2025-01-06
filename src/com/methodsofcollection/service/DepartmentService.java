@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DepartmentService {
-    private ArrayList<Department> departments = new ArrayList();
+    private ArrayList<Department> departments = new ArrayList<>();
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -52,6 +52,15 @@ public class DepartmentService {
         else{
                 System.out.println("no department in system");
             }
+        }
+
+        public Department deleteDepartment(int deptId){
+        Department removeDept = departments.remove(deptId);
+        return removeDept;
+        }
+
+        public void deleteAllDepartment(){
+        departments.clear();
         }
     }
 

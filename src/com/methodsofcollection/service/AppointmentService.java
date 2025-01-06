@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AppointmentService {
-    private ArrayList<Appointment> appointments = new ArrayList();
+    private ArrayList<Appointment> appointments = new ArrayList<>();
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -54,5 +54,13 @@ public class AppointmentService {
         }else{
             System.out.println("no appointment in system");
         }
+    }
+    public Appointment deleteAppointment(int appointmentId){
+        Appointment removeAppointment = appointments.remove(appointmentId);
+        return removeAppointment;
+    }
+
+    public void deleteAllAppointment(){
+        appointments.clear();
     }
 }

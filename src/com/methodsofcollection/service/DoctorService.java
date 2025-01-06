@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DoctorService {
-    private ArrayList<Doctor> doctors = new ArrayList();
+    private ArrayList<Doctor> doctors = new ArrayList<>();
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -63,5 +63,15 @@ public class DoctorService {
         }else{
             System.out.println("no doctor present in system");
         }
+    }
+
+    public Doctor deleteDoctor(int doctorId){
+
+        Doctor removeDoctor = doctors.remove(doctorId);
+        return removeDoctor;
+    }
+
+    public void deleteAllDoctor(){
+        doctors.clear();
     }
 }

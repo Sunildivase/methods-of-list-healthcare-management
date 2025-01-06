@@ -9,14 +9,6 @@ public class MethodsOfListDemo {
 
     public static void main(String[] args) {
 
-        PersonService personService = new PersonService();
-        DoctorService doctorService = new DoctorService();
-        HospitalService hospitalService = new HospitalService();
-        DepartmentService departmentService = new DepartmentService();
-        AppointmentService appointmentService = new AppointmentService();
-        PrescriptionService prescriptionService = new PrescriptionService();
-        BillingService billingService = new BillingService();
-
         int option=0;
         do {
             System.out.println("-----------healthcare-management-system---------------");
@@ -32,44 +24,65 @@ public class MethodsOfListDemo {
 
             switch (option) {
                 case 1:
+                    PersonService personService = new PersonService();
                     personService.createPerson();
                     personService.displayPerson();
+                    personService.deletePerson(1);
+                    personService.deleteAllPerson();
                     System.out.println("person created");
                     break;
 
                 case 2:
+                    DoctorService doctorService = new DoctorService();
                     doctorService.createDoctor();
                     doctorService.displayDoctor();
+                    doctorService.deleteDoctor(1);
+                    doctorService.deleteAllDoctor();
                     System.out.println("doctor created");
                     break;
 
                 case 3:
+                    HospitalService hospitalService = new HospitalService();
                     hospitalService.createHospital();
                     hospitalService.displayHospital();
+                    hospitalService.deleteHospital(1);
+                    hospitalService.deleteAllHospital();
                     System.out.println("hospital created");
                     break;
 
                 case 4:
+                    DepartmentService departmentService = new DepartmentService();
                     departmentService.createDepartment();
                     departmentService.displayDepartment();
+                    departmentService.deleteDepartment(1);
+                    departmentService.deleteAllDepartment();
                     System.out.println("department created ");
                     break;
 
                 case 5:
+                    AppointmentService appointmentService = new AppointmentService();
                     appointmentService.createAppointment();
                     appointmentService.displayAppointment();
+                    appointmentService.deleteAppointment(1);
+                    appointmentService.deleteAllAppointment();
                     System.out.println("appointment created");
                     break;
 
                 case 6:
+                    PrescriptionService prescriptionService = new PrescriptionService();
                     prescriptionService.createPrescription();
                     prescriptionService.displayPrescription();
+                    prescriptionService.deletePrescription(1);
+                    prescriptionService.deleteALlPrescription();
                     System.out.println("prescription created ");
                     break;
 
                 case 7:
+                    BillingService billingService = new BillingService();
                     billingService.createBilling();
                     billingService.displayBilling();
+                    billingService.deleteBilling(1);
+                    billingService.deleteAllBilling();
                     System.out.println("bill created");
                     break;
 

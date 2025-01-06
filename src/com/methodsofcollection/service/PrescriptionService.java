@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class PrescriptionService {
 
-    private ArrayList<Prescription> prescriptions = new ArrayList();
+    private ArrayList<Prescription> prescriptions = new ArrayList<>();
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -48,5 +48,15 @@ public class PrescriptionService {
         }else{
             System.out.println("no prescription in system");
         }
+    }
+
+    public Prescription deletePrescription(int prescriptionId){
+
+        Prescription removePrescription = prescriptions.remove(prescriptionId);
+        return removePrescription;
+    }
+
+    public void deleteALlPrescription(){
+        prescriptions.clear();
     }
 }

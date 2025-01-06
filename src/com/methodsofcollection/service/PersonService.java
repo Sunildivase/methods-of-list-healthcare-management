@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PersonService {
-    private ArrayList<Person> persons = new ArrayList();
+    private ArrayList<Person> persons = new ArrayList<>();
 
 //    private ArrayList<Person> persons = new ArrayList<>();
 
@@ -79,7 +79,15 @@ public class PersonService {
 
     }
 
+    public Person deletePerson(int personId){
 
+        Person removedPerson = persons.remove(personId);
+        return removedPerson;
+    }
+
+    public void deleteAllPerson(){
+        persons.clear();
+    }
 
 }
 
