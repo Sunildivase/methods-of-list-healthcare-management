@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DepartmentService {
-    private ArrayList departments = new ArrayList();
+    private ArrayList<Department> departments = new ArrayList();
 
     private static Scanner scanner = new Scanner(System.in);
 

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class PrescriptionService {
 
-    private ArrayList prescriptions = new ArrayList();
+    private ArrayList<Prescription> prescriptions = new ArrayList();
 
     private static Scanner scanner = new Scanner(System.in);
 

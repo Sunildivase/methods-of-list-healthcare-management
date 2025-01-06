@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PersonService {
-    private ArrayList persons = new ArrayList();
+    private ArrayList<Person> persons = new ArrayList();
 
 //    private ArrayList<Person> persons = new ArrayList<>();
 

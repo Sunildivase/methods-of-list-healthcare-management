@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AppointmentService {
-    private ArrayList appointments = new ArrayList();
+    private ArrayList<Appointment> appointments = new ArrayList();
 
     private static Scanner scanner = new Scanner(System.in);
 

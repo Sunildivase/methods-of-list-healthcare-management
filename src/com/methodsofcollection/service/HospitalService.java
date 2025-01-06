@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class HospitalService {
 
-    private ArrayList hospitals = new ArrayList();
+    private ArrayList<Hospital> hospitals = new ArrayList();
 
     private static Scanner scanner = new Scanner(System.in);
 

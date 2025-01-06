@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BillingService {
-    private ArrayList billings = new ArrayList();
+    private ArrayList<Billing> billings = new ArrayList();
 
     private static Scanner scanner = new Scanner(System.in);
 
