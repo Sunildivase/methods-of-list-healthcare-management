@@ -29,7 +29,7 @@ public class BillingService {
         int totalBill = Integer.parseInt(scanner.nextLine());
 
         Billing billing = new Billing();
-        billing.setbId(bId);
+        billing.setBillId(bId);
         billing.setPersonId(personId);
         billing.setBill(bill);
         billing.setTotalBill(totalBill);

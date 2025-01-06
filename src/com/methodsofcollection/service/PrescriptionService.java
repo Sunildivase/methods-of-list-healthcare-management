@@ -31,7 +31,13 @@ public class PrescriptionService {
         prescription.setPrescriptionId(prescriptionId);
         prescription.setPrescriptionDetails(prescriptionDetails);
         prescription.setPersonId(personId);
-        prescriptions.add(prescription);
+
+        if(prescriptions.contains(prescription)){
+            System.out.println("prescription already generated");
+        }
+        else {
+            prescriptions.add(prescription);
+        }
         return prescription;
     }
     public void displayPrescription(){

@@ -37,7 +37,13 @@ public class AppointmentService {
         appointment.setDoctorId(doctorId);
         appointment.setHospitalId(hospitalId);
         appointment.setDeptId(deptId);
-        appointments.add(appointment);
+
+        if(appointments.contains(appointment)){
+            System.out.println("appointent already booked");
+        }
+        else {
+            appointments.add(appointment);
+        }
         return appointment;
     }
     public void displayAppointment(){

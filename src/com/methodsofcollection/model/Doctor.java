@@ -2,8 +2,8 @@ package com.methodsofcollection.model;
 
 public class Doctor {
     private int doctorId;
-    private String fName;
-    private String lName;
+    private String firstName;
+    private String lastName;
     private int age;
     private String gender;
     private String contactNo;
@@ -13,8 +13,8 @@ public class Doctor {
     public String toString() {
         return "Doctor{" +
                 "doctorId=" + doctorId +
-                ", fName='" + fName + '\'' +
-                ", lName='" + lName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 ", contactNo='" + contactNo + '\'' +
@@ -30,20 +30,20 @@ public class Doctor {
         this.doctorId = doctorId;
     }
 
-    public String getfName() {
-        return fName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setfName(String fName) {
-        this.fName = fName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getlName() {
-        return lName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setlName(String lName) {
-        this.lName = lName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getAge() {

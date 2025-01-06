@@ -4,7 +4,7 @@ public class Department {
     private int deptId;
     private String deptName;
     private int doctorId;
-    private int hId;
+    private int hospitalId;
 
     @Override
     public String toString() {
@@ -12,7 +12,7 @@ public class Department {
                 "deptId=" + deptId +
                 ", deptName='" + deptName + '\'' +
                 ", doctorId=" + doctorId +
-                ", hId=" + hId +
+                ", hospitalId=" + hospitalId +
                 '}';
     }
 
@@ -40,11 +40,11 @@ public class Department {
         this.doctorId = doctorId;
     }
 
-    public int gethId() {
-        return hId;
+    public int getHospitalId() {
+        return hospitalId;
     }
 
-    public void sethId(int hId) {
-        this.hId = hId;
+    public void setHospitalId(int hospitalId) {
+        this.hospitalId = hospitalId;
     }
 }

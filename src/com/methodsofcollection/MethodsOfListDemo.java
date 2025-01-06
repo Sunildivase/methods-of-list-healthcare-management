@@ -34,44 +34,43 @@ public class MethodsOfListDemo {
                 case 1:
                     personService.createPerson();
                     personService.displayPerson();
-
-//                    System.out.println("person created");
+                    System.out.println("person created");
                     break;
 
                 case 2:
                     doctorService.createDoctor();
                     doctorService.displayDoctor();
-//                    System.out.println("doctor created");
+                    System.out.println("doctor created");
                     break;
 
                 case 3:
                     hospitalService.createHospital();
                     hospitalService.displayHospital();
-//                    System.out.println("hospital created");
+                    System.out.println("hospital created");
                     break;
 
                 case 4:
                     departmentService.createDepartment();
                     departmentService.displayDepartment();
-//                    System.out.println("department created ");
+                    System.out.println("department created ");
                     break;
 
                 case 5:
                     appointmentService.createAppointment();
                     appointmentService.displayAppointment();
-//                    System.out.println("appointment created");
+                    System.out.println("appointment created");
                     break;
 
                 case 6:
                     prescriptionService.createPrescription();
                     prescriptionService.displayPrescription();
-//                    System.out.println("prescription created ");
+                    System.out.println("prescription created ");
                     break;
 
                 case 7:
                     billingService.createBilling();
                     billingService.displayBilling();
-//                    System.out.println("bill created");
+                    System.out.println("bill created");
                     break;
 
                 default:

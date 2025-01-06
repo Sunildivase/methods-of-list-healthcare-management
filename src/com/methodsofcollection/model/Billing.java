@@ -1,7 +1,7 @@
 package com.methodsofcollection.model;
 
 public class Billing {
-    private int bId;
+    private int billId;
     private int personId;
     private int bill;
     private int totalBill;
@@ -9,19 +9,19 @@ public class Billing {
     @Override
     public String toString() {
         return "Billing{" +
-                "bId=" + bId +
+                "billId=" + billId +
                 ", personId=" + personId +
                 ", bill=" + bill +
                 ", totalBill=" + totalBill +
                 '}';
     }
 
-    public int getbId() {
-        return bId;
+    public int getBillId() {
+        return billId;
     }
 
-    public void setbId(int bId) {
-        this.bId = bId;
+    public void setBillId(int billId) {
+        this.billId = billId;
     }
 
     public int getPersonId() {
